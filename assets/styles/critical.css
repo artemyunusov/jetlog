@@ -98,10 +98,6 @@ button:focus {
   border: none;
 }
 
-.text-color {
-  color: #ed382b;
-}
-
 section {
   border-bottom: none !important;
   border-top: none !important;
@@ -151,7 +147,7 @@ section {
 
 .header-button-btn {
   padding: 1rem 2rem;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -226,9 +222,9 @@ section {
 }
 
 .intro-title h2 {
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   font-size: 7rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   color: #fff;
 }
@@ -252,7 +248,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;

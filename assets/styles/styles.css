@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus,
+*::before:focus,
+*::after:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .about-wrap {
   padding: 25rem 0 14rem;
   display: -webkit-box;
@@ -17,7 +29,7 @@
 
 .about-title h2 {
   font-size: 4.8rem;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   font-weight: 700;
   color: #003859;
 }
@@ -37,52 +49,30 @@
   color: #545F6B;
 }
 
-.about-link:hover .about-link-text {
-  color: #003859;
-}
-
-.about-link:hover svg {
-  fill: #003859;
-}
-
-.about-link a {
+.about-man a {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
 }
 
-.about-link-text {
-  display: inline-block;
-  margin-right: 1.5rem;
+.about-man-name {
+  margin-bottom: 1rem;
+  display: block;
   font-size: 20px;
-  font-family: "Big Shoulders Text";
-  color: #ed382b;
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
+  color: #003859;
   font-weight: 700;
-  text-transform: uppercase;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  text-transform: capitalize;
 }
 
-.about-link-icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #ed382b;
-}
-
-.about-link-icon svg {
-  width: 60%;
-  height: 60%;
-  fill: #fff;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+.about-man-job {
+  display: block;
+  font-size: 16px;
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
+  color: #003859;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .about-right {
@@ -136,7 +126,7 @@
   font-size: 4.8rem;
   font-weight: 700;
   color: #fff;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   text-transform: uppercase;
 }
 
@@ -193,7 +183,7 @@
           justify-content: center;
   font-weight: 700;
   color: #ed382b;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
 }
 
 .stats-num-qnt {
@@ -208,6 +198,7 @@
 }
 
 .stats-text {
+  padding-right: 25px;
   text-align: center;
   color: #545F6B;
   font-weight: 400;
@@ -234,9 +225,10 @@
 
 .services-title h2 {
   font-weight: 700;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   color: #003859;
   font-size: 4.8rem;
+  text-transform: capitalize;
 }
 
 .services-title h2::first-letter {
@@ -247,7 +239,7 @@
   margin-bottom: 8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 250px);
+  grid-template-rows: repeat(1, 250px);
   grid-gap: 2.5rem;
 }
 
@@ -290,7 +282,7 @@
 
 .services-item-link a {
   color: #fff;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 22px;
@@ -311,7 +303,7 @@
 
 .services-link a {
   font-weight: 700;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   color: #fff;
@@ -343,8 +335,8 @@
   font-weight: 700;
   color: #003859;
   font-size: 4.8rem;
-  font-family: "Big Shoulders Text";
-  text-transform: uppercase;
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
+  text-transform: capitalize;
 }
 
 .partners-flex {
@@ -363,6 +355,44 @@
   margin-bottom: 5rem;
 }
 
+.faq-wrap {
+  background-color: #eee;
+}
+
+.faq-title {
+  padding: 1.8rem 2rem 1.5rem 5rem;
+  font-size: 18px;
+  font-weight: 700;
+  color: #003859;
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.faq-text {
+  display: none;
+  background-color: #fff;
+}
+
+.faq-text p {
+  padding: 2rem 2rem 3rem 2rem;
+  font-size: 16px;
+  color: #003859;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.active {
+  color: #ed382b;
+  border-top: 2px solid #ed382b;
+}
+
+.show {
+  display: block;
+}
+
 .news-wrap {
   padding: 10rem 0 20rem;
 }
@@ -375,7 +405,7 @@
   font-weight: 700;
   font-size: 4.8rem;
   color: #003859;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
 }
 
 .news-title h2::first-letter {
@@ -385,18 +415,48 @@
 .news-block {
   display: -webkit-box;
   display: flex;
-  -webkit-box-align: stretch;
-          align-items: stretch;
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
 
 .news-item {
   width: 48%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.news-item-wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
 
 .news-item-img {
+  width: auto;
+  height: 350px;
   margin-bottom: 4rem;
+}
+
+.news-item-img a {
+  width: 100%;
+  height: 100%;
+}
+
+.news-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-item-content {
+  margin-top: auto;
 }
 
 .news-item-date {
@@ -407,7 +467,7 @@
   padding: 0.5rem 1rem .5rem 1.5rem;
   font-size: 24px;
   font-weight: 700;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   color: #fff;
   background-color: #ed382b;
   -webkit-transition: all .3s ease-in-out;
@@ -421,7 +481,7 @@
 .news-item-text a {
   font-weight: 700;
   color: #003859;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 22px;
 }
@@ -441,9 +501,9 @@
 
 .resp-title h2 {
   font-weight: 700;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 4.8rem;
 }
 
@@ -518,7 +578,7 @@
 
 .footer-tel a {
   font-weight: 700;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   color: #003859;
   text-transform: uppercase;
   font-size: 30px;
@@ -575,7 +635,7 @@
   font-size: 30px;
   font-weight: 700;
   color: #ed382b;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
 }
 
 .footer-right-top-title h3::first-letter {
@@ -635,7 +695,7 @@
   font-size: 22px;
   font-weight: 700;
   color: #003859;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
   text-transform: uppercase;
 }
 
@@ -683,7 +743,7 @@
   font-size: 22px;
   font-weight: 700;
   color: #545F6B;
-  font-family: "Big Shoulders Text";
+  font-family: "Big Shoulders Text", "Roboto Condensed", sans-serif;
 }
 
 .form-input::first-letter {
@@ -792,9 +852,9 @@
   height: 100vh;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: auto;
   background-color: rgba(0, 56, 89, 0.95);
-  z-index: 9997;
+  z-index: 998;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   -webkit-transition-delay: .3s;
@@ -807,7 +867,6 @@
 .mob-active {
   opacity: 1;
   visibility: visible;
-  pointer-events: all;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   -webkit-transform: translateX(0);
@@ -825,7 +884,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  z-index: 9998;
+  z-index: 999;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(100%);
@@ -842,6 +901,7 @@
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
+  pointer-events: all;
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -853,14 +913,16 @@
 }
 
 .nav-fixed-link {
+  position: relative;
+  z-index: 9999;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .mob-active {
+  -webkit-tap-highlight-color: transparent;
   opacity: 1;
   visibility: visible;
-  pointer-events: all;
   -webkit-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
   -webkit-transform: translateX(0);
@@ -924,7 +986,7 @@
 
 @media (max-width: 1366px) {
   .intro-wrap {
-    width: 45%;
+    width: 46%;
   }
 
   .intro-title h2 {
@@ -964,8 +1026,24 @@
 }
 
 @media (max-width: 768px) {
+  .burger {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  .header-logo,
+  .header-button {
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
+  }
+
   .header-logo-img {
     width: 130px;
+  }
+
+  .header-menu {
+    display: none;
   }
 
   .intro-wrap {
@@ -1063,22 +1141,6 @@
 }
 
 @media (max-width: 600px) {
-  .burger {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
-
-  .header-logo,
-  .header-button {
-    -webkit-box-flex: 0;
-            flex: 0 0 50%;
-  }
-
-  .header-menu {
-    display: none;
-  }
-
   .intro-title h2,
   .about-title h2,
   .media-title h2,
@@ -1089,6 +1151,12 @@
   .resp-title h2,
   .footer-title h2 {
     font-size: 3.6rem;
+  }
+
+  .header-button-btn {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
   }
 
   .intro-wrap {
