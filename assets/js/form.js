@@ -46,23 +46,28 @@ $(document).ready(function() {
 });
 
 let formModal = document.querySelector('.form-modal-wrap');
+let formM = document.querySelector('.form-modal');
 let burgerM = document.querySelector('.burger');
-let formModalMask = document.querySelector('.form-modal-mask');
 let formModalMaskClose = document.querySelector('.form-modal-mask-close');
 let headerBtn = document.querySelector('.header-button-btn');
+let headerW = document.querySelector('.header');
 
 headerBtn.addEventListener('click', function(e){
 
   e.preventDefault();
-  burgerM.style.display = 'none';
   formModal.classList.add('show-modal');
-  formModalMask.classList.add('show-modal');
+  formM.classList.add('show-modal-f');
+  burgerM.style.display = 'none';
   document.body.classList.add('oh');
+  document.body.classList.add('modal-m');
+  headerW.classList.add('modal-h');
 })
 
 formModalMaskClose.addEventListener('click', function(){
-  formModalMask.classList.remove('show-modal');
   burgerM.style.display = 'block';
   formModal.classList.remove('show-modal');
+  formM.classList.remove('show-modal-f');
   document.body.classList.remove('oh');
+  document.body.classList.remove('modal-m');
+  headerW.classList.remove('modal-h');
 })
