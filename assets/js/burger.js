@@ -12,6 +12,14 @@ let menuFixed = document.querySelector('.nav-fixed');
 let menu = document.querySelector('.nav');
 let links = document.querySelectorAll('.nav-link');
 let mobLinks = document.querySelectorAll('.nav-fixed-link');
+let orderBtn = document.querySelector('.services-link a');
+
+orderBtn.addEventListener('click', function(e){
+  e.preventDefault();
+
+  // console.log(e.target.parentNode);
+  scrollToTarget(e.target.parentNode.hash);
+})
 
 menuFixed.addEventListener('click', function(e){
   let link = e.target;
@@ -52,4 +60,17 @@ let mediaBtn = document.querySelector('.intro-link a');
 mediaBtn.addEventListener('click', function(e){
   e.preventDefault();
   scrollToTarget(mediaBtn.hash);
+})
+
+let mobSub = document.querySelector('.nav-fixed-pos');
+let mobSubTarget = document.querySelector('.nav-fixed-sub');
+
+mobSub.addEventListener('click', function(e){
+
+  // e.preventDefault();
+
+  if(e.target.parentNode.classList.contains('nav-fixed-pos')){
+
+    mobSubTarget.classList.toggle('sub-menu-show');
+  }
 })
