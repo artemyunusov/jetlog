@@ -546,7 +546,7 @@
   min-width: 100%;
   position: absolute;
   top: 20px;
-  right: 0;
+  left: 0;
   padding-top: 20px;
   opacity: 0;
   visibility: hidden;
@@ -604,7 +604,7 @@
 
 .section-content p {
   margin-bottom: 1rem;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #545F6B;
   line-height: 1.4;
@@ -874,6 +874,22 @@
   text-transform: capitalize;
 }
 
+.form-input::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.form-input::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.form-input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.form-input::placeholder {
+  text-transform: capitalize;
+}
+
 .form-submit {
   position: absolute;
   top: 13px;
@@ -941,8 +957,27 @@
   width: 70%;
   margin-bottom: 1rem;
   padding: 1rem 2rem;
+  font-family: "Roboto Condensed", sans-serif;
   background-color: #fff;
   border-radius: 5px;
+}
+
+.form-modal-input::-webkit-input-placeholder, .form-modal-textarea::-webkit-input-placeholder, .form-modal-submit::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.form-modal-input::-moz-placeholder, .form-modal-textarea::-moz-placeholder, .form-modal-submit::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.form-modal-input:-ms-input-placeholder, .form-modal-textarea:-ms-input-placeholder, .form-modal-submit:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.form-modal-input::placeholder,
+.form-modal-textarea::placeholder,
+.form-modal-submit::placeholder {
+  text-transform: capitalize;
 }
 
 .form-modal-input:focus,
@@ -1151,7 +1186,7 @@
 
 .nav-fixed-link {
   position: relative;
-  z-index: 9999;
+  z-index: 99999;
   font-size: 16px;
   text-transform: uppercase;
 }

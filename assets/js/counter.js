@@ -26,7 +26,7 @@ let elem = document.querySelector('.stats-row');
         }
       }
 
-      if(posElem < windowH + 600){
+      if(posElem < windowH + 170){
         updCount();
       }
     })

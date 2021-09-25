@@ -14,7 +14,16 @@
 </head>
 
 <body>
-  
+
+  <!-- data-aos="fade-up"
+  data-aos-offset="200"
+  data-aos-delay="50"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-out"
+  data-aos-mirror="true"
+  data-aos-once="false"
+  data-aos-anchor-placement="top-center"> -->
+
 <style>
   
   .burger,
@@ -149,7 +158,7 @@
   				</div>
   				<div class="header-button">
   					<a class="header-button-btn" href="./calculator.html" target="blank">
-  						рассчитать цену
+  						рассчитать погрузку
   					</a>
   				</div>
   			</div>
@@ -211,17 +220,33 @@
   						</div>
   						<div class="footer-left-block footer-add">
   							<span>
-  								178 West 27th Street, Suite 527 New York NY 10012
+  								Страна: Узбекистан
+                  <br>
+                  Город: Ташкент
+                  <br>
+                  Район: Мирзо-Улугбекский
+                  <br>
+                  пр-д 1-й АРАЛ, 15
   							</span>
   						</div>
   						<div class="footer-left-block footer-tel">
-  							<a href="tel:998974489700">
-  								+998 97 448 97 00
+  							<a href="tel:998903968008">
+  								+998 90 396 8008
+  							</a>
+  						</div>
+  						<div class="footer-left-block footer-tel">
+  							<a href="tel:998993968008">
+  								+998 99 396 8008
+  							</a>
+  						</div>
+  						<div class="footer-left-block footer-tel">
+  							<a href="tel:998993978008">
+  								+998 99 397 8008
   							</a>
   						</div>
   						<div class="footer-left-block footer-mail">
-  							<a href="mailto:some@gmail.com">
-  								some@gmail.com"
+  							<a href="manager@jetlogistic.info">
+  								manager@jetlogistic.info
   							</a>
   						</div>
   						<div class="footer-left-block footer-social">
@@ -386,6 +411,16 @@
   	</footer>
   </div>
   
+<div class="burger">
+  <div class="burger-icon">
+    <div class="burger-icon-wrap">
+      <span class="burger-icon-item burger-icon-item-1"></span>
+      <span class="burger-icon-item burger-icon-item-2"></span>
+      <span class="burger-icon-item burger-icon-item-3"></span>
+    </div>
+  </div>
+</div><!-- burger -->
+
 <div class="body-mask"></div>
 
 <div class="nav-mob">
@@ -753,8 +788,11 @@
 				document.body.appendChild(link);
 			}
 			loadStyle("./assets/styles/styles.min.css");
+			loadStyle("https://unpkg.com/aos@next/dist/aos.css");
+      // <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 	</script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./assets/js/burger.js"></script>
   <script src="./assets/js/form.js"></script>
@@ -762,6 +800,10 @@
   <script src="./assets/js/to-top.js"></script>
   <script src="./assets/js/counter.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
